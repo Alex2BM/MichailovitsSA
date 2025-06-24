@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+     background-image: url(/assets/img/background.png);
   }
 
   .navbar {
@@ -212,7 +213,7 @@ body {
   }
 
   .info h2, .info h3{
-    color: #98c0ef;
+    color:#2b588c;
   }
 
   /* Optional: slightly smaller text on smaller screens */

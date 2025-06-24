@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Navbar</title>
   <link rel="stylesheet" href="/assets/css/index.css">
-</head>
+</head> 
 <body>
 <!--NAV_BAR_ELEMENT-->
   <nav class="navbar">
@@ -57,7 +57,6 @@
   <!--MAIN_CONTENT-->
   <main>
     <div class="intro">
-      <p>Welcome to Michailovits S.A.</p>
       <div class="intro-right">
         <div class="intro-left">
           <!-- <h1>We help bakeries and pastry shops present their creations with beautiful, sustainable packaging.</h1>
@@ -69,24 +68,47 @@
             </video>
 
             <div class="content-overlay">
-              <h1 class="fade-in">We help bakeries and pastry shops present their creations with beautiful, sustainable packaging.</h1>
+              <p>Welcome to Michailovits S.A.</p>
+              <h1 class="fade-in introH">We help bakeries and pastry shops present their creations with beautiful, sustainable packaging.</h1>
               <a href="" class="fade-in"><h2>Explore our tailored solutions for your bakery needs</h2></a>
             </div>
           </div>
 
         </div>
-        <div class="slider-container">
-          <div class="slider-track" id="sliderTrack">
-            <img src="/assets/img/introImg/3.jpg" alt="3">
-            <img src="/assets/img/introImg/1.jpg" alt="1">
-            <img src="/assets/img/introImg/2.jpg" alt="2">          
-            <img src="/assets/img/introImg/4.jpg" alt="4">
-            <img src="/assets/img/introImg/5.jpg" alt="5">
+        <div class="intro-container2">
+          <h2>About the Company</h2>
+          <div class="divider"></div>
+          <div class="info-cont">
+            <h3 id="infoText" class="clickable-info">
+              <button class="close-btn" id="closePopup">&times;</button>
+              Founded in 1967 as a one-man operation, our company 
+              has grown into a third-generation family business specializing in 
+              pastry and bakery paper packaging. What began with a single craftsman's 
+              dedication has evolved into a trusted name in the industry—combining tradition 
+              with innovation. For over five decades, we've stayed at the forefront of the field by actively 
+              participating in expos and industry events, always staying in tune with 
+              market trends and customer needs. Our commitment to quality, service, 
+              and sustainability continues to shape our journey till this day.</h3>
+              <div class="blur"></div>
+            <div class="slider-container">
+            <div class="slider-track" id="sliderTrack">
+              <img src="/assets/img/introImg/3.jpg" alt="3">
+              <img src="/assets/img/introImg/1.jpg" alt="1">
+              <img src="/assets/img/introImg/2.jpg" alt="2">          
+              <img src="/assets/img/introImg/4.jpg" alt="4">
+              <img src="/assets/img/introImg/5.jpg" alt="5">
+            </div>
+            <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
           </div>
-          <button class="slider-btn prev-btn" onclick="prevSlide()">&#10094;</button>
-          <button class="slider-btn next-btn" onclick="nextSlide()">&#10095;</button>
+          </div>
+           
+        </div>
+        
       </div>
-      </div>
+    </div>
+    <div class="services">
+      <p>Our Services</p>
     </div>
     <div class="clients">
       <p>Trusted by Leading Pastry Shops & Bakeries</p>
@@ -222,7 +244,6 @@
     });
   });
   </script>
-
   <!-- VIDEO TEXT FADE_IN EFFECT -->
   <script>
     window.addEventListener('load', () => {
@@ -244,6 +265,27 @@
       }, 1000); // 2000ms = 2 seconds
     });
   </script>
+  <!-- COMPANY_HISTORY_POP_UP -->
+  <script>
+    const infoText = document.getElementById("infoText");
+    const blur = document.querySelector(".blur");
+    const closePopup = document.getElementById("closePopup");
+
+    infoText.addEventListener("click", function (e) {
+      // Prevent triggering the popup again when clicking the close button
+      if (e.target.id === "closePopup") return;
+
+      infoText.classList.add("info-popup");
+      blur.style.display = "block";
+      closePopup.style.display = "block";
+    });
+
+    closePopup.addEventListener("click", function () {
+      infoText.classList.remove("info-popup");
+      blur.style.display = "none";
+      closePopup.style.display = "none";
+    });
+</script>
 
 </body>
 </html>
