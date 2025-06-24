@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .navbar {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: #3C6EA8;
+    color: white;
+    position: relative;
+  }
+
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-items {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    width: 12vw;
+    text-align: center;
+    transition: transform 0.2s ease, text-decoration 0.2s ease;
+    padding: 5px 0px;
+    border-radius: 10px;
+  }
+  
+  .nav-items:hover {
+    transform: translateY(-4px);
+    text-decoration:underline;
+  }
+  
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #3C6EA8;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    border-radius: 8px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+    
+
+
+  .dropdown a {
+    padding: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+  }
+  .hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 11px);
+  }
+  
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -11px);
+  }
+  
+  .dropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .products-dropdown {
+    position: relative;
+  }
+  
+  .products-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3C6EA8;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    z-index: 1000;
+  }
+  
+  .products-list a {
+    display: flex;
+    align-items:center;
+    padding: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .products-list a:hover {
+    background-color: #2b588c;
+    border-radius: 5px;
+  }
+  
+  .products-dropdown:hover .products-list {
+    display: block !important;
+  }
+  .products-dropdown > a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    border-radius: 10px;
+  }
+  
+  .products-list img{
+    height: 80px;
+  }
+  .footer {
+    background-color: #98c0ef;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer .img1{
+    height: 30px;
+  }
+
+  .footer-follow,
+  .footer-certifications {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-follow span {
+    font-size: 1.1rem;
+  }
+
+  .footer-follow a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+
+  .footer-follow a:hover {
+    color: #ffd700; /* gold highlight on hover */
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .footer-certifications .cert-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  main{
+    min-height: 90vh;
+  }
+
+  /* Optional: slightly smaller text on smaller screens */
+  @media (max-width: 600px) {
+    .footer {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 800px) {
+    .nav-links {
+      display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+    .nav-items{
+        text-align: start;
+        width: 35vw;
+        padding: 0.5rem 10px;
+        display: flex;
+        height: 30px;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="/assets/css/contactUs.css">
+</head>
+<body>
+  <!--NAV_BAR_ELEMENT-->
+  <nav class="navbar">
+    <div class="logo"><a href="http://127.0.0.1:5500/index.html"><img src="/assets/img/miniLogo.png" alt="logo1" style="height: 70px; margin-right: 30px;"></a></div>
+    <div class="nav-links">
+      <a href="http://127.0.0.1:5500/index.html#" class="nav-items">Home</a>
+      <!-- <a href="#" class="nav-items">Products</a> -->
+      <div class="nav-items products-dropdown">
+        <a href="http://127.0.0.1:5500/products.html#">Products</a>
+        <div class="products-list">
+          <a href="#"><img src="/assets/img/baking-cup.png" alt="">Baking Cups</a>
+          <a href="#"><img src="/assets/img/muffin-paper.png" alt="">Muffin Cups</a>
+          <a href="#"><img src="/assets/img/cake-flatBase.png" alt="">Pastry Bases</a>
+          <a href="#"><img src="/assets/img/cakeBase.png" alt="">Cake Cups</a>
+          <a href="#"><img src="/assets/img/ice-cream-cup.png" alt="">Ice-Cream Cups</a>
+          <a href="#"><img src="/assets/img/ice-cream-cone.png" alt="">Paper Cones</a>
+        </div>
+      </div>
+      <a href="http://127.0.0.1:5500/services.html#" class="nav-items">Services</a>
+      <a href="http://127.0.0.1:5500/contactUs.html#" class="nav-items"style="background-color: #2b588c;">Contact Us</a>
+      <a href="http://127.0.0.1:5500/blogs.html#" class="nav-items">Blogs</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu(event)">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="dropdown" id="dropdownMenu">
+      <div class="nav-items"><a href="http://127.0.0.1:5500/index.html#">Home</a></div>
+      <div class="nav-items products-dropdown">
+        <a href="http://127.0.0.1:5500/products.html#">Products
+        <div class="products-list">
+          <a href="#"><img src="/assets/img/baking-cup.png" alt="">Baking Cups</a>
+          <a href="#"><img src="/assets/img/muffin-paper.png" alt="">Muffin Cups</a>
+          <a href="#"><img src="/assets/img/cake-flatBase.png" alt="">Pastry Bases</a>
+          <a href="#"><img src="/assets/img/cakeBase.png" alt="">Cake Cups</a>
+          <a href="#"><img src="/assets/img/ice-cream-cup.png" alt="">Ice-Cream Cups</a>
+          <a href="#"><img src="/assets/img/ice-cream-cone.png" alt="">Paper Cones</a>
+          </div>
+      </a>
+      </div>
+      
+      <div class="nav-items"><a href="http://127.0.0.1:5500/services.html#">Services</a></div>
+      <div class="nav-items"><a href="http://127.0.0.1:5500/contactUs.html#">Contact Us</a></div>
+      <div class="nav-items"><a href="http://127.0.0.1:5500/blogs.html#">Blogs</a></div>
+    </div>
+  </nav>
+  <!--MAIN_CONTENT-->
+  <main>
+    <h1>Contact us</h1>
+    <div class="info-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.334236506085!2d23.740720475364064!3d38.062596495529185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a219a5de1ceb%3A0x38e903eddd9e4264!2zSS4gzp3Or866zrEgMTksIM6Rz4fOsc-Bzr3Orc-CIDEzNiA3MSwgzpXOu867zqzOtM6x!5e0!3m2!1sel!2snl!4v1750088486380!5m2!1sel!2snl" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="info">
+        <h2>Athens Office(Head Office)</h2>
+        <h3>MICHAILOVITS S.A.</h3>
+        <h3>Ιωάννου Νίκα 19, Αχαρναίς 13671</h3>
+        <div class="phoneN"><img src="/assets/img/phoneLogo.png" alt="phone"><h3 style="margin: 0px;">  2102462105</h3></div>
+        <div class="mail"><img src="/assets/img/mailLogo.png" alt="mail"><h3>  info@michailovits.gr</h3></div>
+      </div>
+    </div>
+    
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+        <div class="footer-follow">
+        <span><img style="height: 8px;
+        margin-right: 5px;" src="/assets/img/copyright-icon.png" alt="">Michailovits S.A. 1985</span>
+        <span> | </span>
+        <span>Follow us</span>
+        <a href="https://www.facebook.com/p/Michailovits-SA-100050519636260/?locale=el_GR" target="_blank" aria-label="Facebook">
+           <img style="height: 40px;" src="/assets/img/facebook_icon.webp" alt="fb-logo">
+        </a>
+        <a href="https://www.instagram.com/michailovits_sales/p/DHV4ClniMjk/" target="_blank" aria-label="Instagram">
+            <img class="img1" src="/assets/img/Instagram_icon.png.webp" alt="instagram-logo">
+        </a>
+        </div>
+        <span style="margin-top: 10px;"> | </span>
+        <div class="footer-certifications">
+        <div class="cert-item">
+            <img class="img1" src="/assets/img/ISO-logo.svg" alt="ISO-logo">
+            <span>ISO Certified</span>
+        </div>
+        <span> | </span>
+        <div class="cert-item">
+            <img class="img1" src="/assets/img/recycling-icon.webp" alt="recycling-logo">
+            <span>Using Recycling Materials</span>
+        </div>
+        </div>
+  </footer>
+  <script>
+    function toggleMenu(event) {
+      event.stopPropagation();
+      const dropdown = document.getElementById('dropdownMenu');
+      const hamburger = document.querySelector('.hamburger');
+  
+      dropdown.classList.toggle('show');
+      hamburger.classList.toggle('active');
+    }
+  
+    document.addEventListener('click', function () {
+      const dropdown = document.getElementById('dropdownMenu');
+      const hamburger = document.querySelector('.hamburger');
+  
+      dropdown.classList.remove('show');
+      hamburger.classList.remove('active');
+    });
+  
+    document.getElementById('dropdownMenu').addEventListener('click', function (event) {
+      event.stopPropagation();
+    });
+  </script>
+  
+</body>
+</html>
