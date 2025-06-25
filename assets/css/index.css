@@ -58,7 +58,7 @@ body {
     flex-direction: column;
     background-color: #3C6EA8;
     position: absolute;
-    top: 100%;
+    top: -10px;
     left: 0;
     padding: 1rem;
     border-radius: 8px;
@@ -288,7 +288,7 @@ body {
 .intro p{
   font-size: 40px;
   text-align: center;
-  color:#3C6EA8;
+  color:#153860;
   margin-bottom: 0px;
   opacity: 0;
   transform: translateY(20px);
@@ -311,7 +311,7 @@ body {
   opacity: 1;
   transform: translateY(0);
       position: relative;
-    top: -100px;
+    top: -20px;
     font-size: 60px;
 }
 
@@ -323,12 +323,13 @@ body {
     color: white;
     padding: 20px;
     border-radius: 20px;
-    margin: 0px auto;
+    margin: 40px auto;
     width: 90%;
     font-size: 25px
 }
 
 .fade-in {
+  text-decoration: none;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease, transform 1s ease;
@@ -459,6 +460,22 @@ body {
   z-index: 101;
 }
 
+.contact h1, .contact h3{
+  text-align: center;
+  color: white;
+}
+.contact label{
+  color: white;
+}
+
+.contact{
+  background-color: #3C6EA8;
+  margin: 5vw auto;
+  border-radius: 20px;
+  padding: 3vw;
+  max-width: 800px;
+}
+
 
   /* Optional: slightly smaller text on smaller screens */
 @media (max-width: 600px) {
@@ -469,7 +486,7 @@ body {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .nav-links {
     display: none;
   }

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Navbar</title>
-  <link rel="stylesheet" href="/assets/css/products.css">
+  <link rel="stylesheet" href="/assets/css/FAQS.css">
 </head>
 <body>
   <!--NAV_BAR_ELEMENT-->
@@ -13,7 +13,7 @@
     <div class="nav-links">
       <a href="http://127.0.0.1:5500/index.html#" class="nav-items">Home</a>
       <!-- <a href="#" class="nav-items">Products</a> -->
-      <div class="nav-items products-dropdown" style="background-color: #2b588c;">
+      <div class="nav-items products-dropdown">
         <a href="http://127.0.0.1:5500/products.html#">Products</a>
         <div class="products-list">
           <a href="#"><img src="/assets/img/baking-cup.png" alt="">Baking Cups</a>
@@ -27,7 +27,9 @@
       <a href="http://127.0.0.1:5500/services.html#" class="nav-items">Services</a>
       <a href="http://127.0.0.1:5500/contactUs.html#" class="nav-items">Contact Us</a>
       <a href="http://127.0.0.1:5500/blogs.html#" class="nav-items">Blogs</a>
-      <a href="http://127.0.0.1:5500/blogs.html#" class="nav-items">FAQS</a>
+      <a href="http://127.0.0.1:5500/FAQS.html#" class="nav-items"style="background-color: #2b588c;">FAQS</a>
+
+
     </div>
     <div class="hamburger" onclick="toggleMenu(event)">
       <div></div>
@@ -57,43 +59,11 @@
   </nav>
   <!--MAIN_CONTENT-->
   <main>
-    <h2>Our Products</h2>
-    <p>We offer a big variety of sizes and shapes for all perpuses and uses</p>
-     <!-- <img src="/assets/img/PP.png" style="width: 100vw" alt="coming soon">
-     <p style="    position: relative; top: -280vh; left: 40vw; font-size: 60px;">Coming Soon...</p> -->
-     <div class="product-container">
-      <div class="product p6">
-        <p><img src="/assets/img/baking-cup.png" alt="">Baking Cups</p>
-        <div class="divider"></div>
-        <p></p>
-      </div>
-      <div class="product p1">
-        <p><img src="/assets/img/muffin-paper.png" alt="">Muffin Cups</p>
-        <div class="divider"></div>
-        <p></p>
-      </div>
-      <div class="product p2">
-        <p><img src="/assets/img/cake-flatBase.png" alt="">Pastry Bases</p>
-        <div class="divider"></div>
-        <p></p>
-      </div>
-      <div class="product p3">
-        <p><img src="/assets/img/cakeBase.png" alt="">Cake Cups</p>
-        <div class="divider"></div>
-        <p></p>
-      </div>
-      <div class="product p4">
-        <p><img src="/assets/img/ice-cream-cup.png" alt="">Ice-Cream Cups</p>
-        <div class="divider"></div>
-        <p></p>
-      </div>
-      <div class="product p5">
-        <p><img src="/assets/img/ice-cream-cone.png" alt="">Paper Cones</p>
-        <div class="divider"></div>
-        <p></p>
-      </div>
-     </div>
-     
+    <img src="/assets/img/PP.png" style="width: 100vw" alt="coming soon">
+    <p style="    position: relative;
+    top: -280vh;
+    left: 40vw;
+    font-size: 60px;">Coming Soon...</p>
   </main>
   <!-- FOOTER -->
   <footer class="footer">
@@ -122,8 +92,6 @@
         </div>
         </div>
   </footer>
-  <button id="backToTop" title="Go to top">↑</button>
-
   <script>
     function toggleMenu(event) {
       event.stopPropagation();
